@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:http/http.dart';
+import 'package:riverpod/riverpod.dart';
 import 'package:riverpod_boilerplate/models/user_model.dart';
 
 class ApiServices{
@@ -15,3 +16,5 @@ class ApiServices{
     }
   }
 }
+
+final userProvider = Provider<ApiServices>((ref) => ApiServices());
