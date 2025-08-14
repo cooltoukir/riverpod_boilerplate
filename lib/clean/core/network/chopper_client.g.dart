@@ -6,7 +6,7 @@ part of 'chopper_client.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$chopperClientHash() => r'146533a3872db879f7147469dacbfc5096d96799';
+String _$chopperClientHash() => r'fab169f06ea9022da8565aa7fdbb71b41da3582c';
 
 /// See also [chopperClient].
 @ProviderFor(chopperClient)

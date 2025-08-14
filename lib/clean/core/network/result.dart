@@ -1,9 +1,9 @@
 sealed class Result<T> {
   const Result();
 
-  const factory Result.ok(T value) = Ok<T>;
+  factory Result.ok(T value) => Ok(value);
 
-  const factory Result.error(Exception error) = Err<T>;
+  factory Result.error(Exception error) => Error(error);
 }
 
 final class Ok<T> extends Result<T> {
@@ -15,8 +15,8 @@ final class Ok<T> extends Result<T> {
   String toString() => 'Result<$T>.ok($value)';
 }
 
-final class Err<T> extends Result<T> {
-  const Err(this.error);
+final class Error<T> extends Result<T> {
+  const Error(this.error);
 
   final Exception error;
 
